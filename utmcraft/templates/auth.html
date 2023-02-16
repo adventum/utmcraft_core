@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block title %}
+    {{ block.super }} | Авторизация
+{% endblock %}
+
+{% block main %}
+    <div class="row align-items-center" style="height: 100vh">
+        <div class="col-12 d-flex flex-column justify-content-center">
+            <div class="align-self-center ">
+                <h1 class="mb-3 text-center">UtmCraft</h1>
+                {% crispy form %}
+            </div>
+        </div>
+    </div>
+{% endblock %}

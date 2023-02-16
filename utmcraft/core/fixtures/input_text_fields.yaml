@@ -1,0 +1,48 @@
+- model: core.inputtextformfield
+  pk: 2
+  fields:
+    clean_value: true
+    disable_lowercase: false
+    chars_settings: transliterate
+    add_hash: false
+    hash_separator: '~'
+    initial: ''
+    is_required: false
+    placeholder: ''
+    tooltip: ''
+- model: core.inputtextformfield
+  pk: 18
+  fields:
+    clean_value: false
+    disable_lowercase: false
+    chars_settings: transliterate
+    add_hash: false
+    hash_separator: '~'
+    initial: ''
+    is_required: true
+    placeholder: https://example.com/landing
+    tooltip: ''
+- model: core.inputtextformfield
+  pk: 1
+  fields:
+    clean_value: true
+    disable_lowercase: false
+    chars_settings: transliterate
+    add_hash: false
+    hash_separator: '~'
+    initial: ''
+    is_required: false
+    placeholder: ''
+    tooltip: ''
+- model: core.inputtextformfield
+  pk: 3
+  fields:
+    clean_value: true
+    disable_lowercase: false
+    chars_settings: transliterate
+    add_hash: false
+    hash_separator: '~'
+    initial: ''
+    is_required: false
+    placeholder: ''
+    tooltip: Заполните это поле, если генерируется URL для быстрой ссылки в контексте.

@@ -1,0 +1,11 @@
+{% extends 'client_admin.html' %}
+{% load static %}
+
+{% block title %}
+    {{ block.super }} | Поля input int
+{% endblock %}
+
+{% block content %}
+    {% url 'client_admin:ui-input-int' as url %}
+    {% include 'includes/client_admin/field_content.html' with field_type='input int'%}
+{% endblock %}

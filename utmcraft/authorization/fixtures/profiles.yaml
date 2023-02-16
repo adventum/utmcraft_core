@@ -1,0 +1,8 @@
+- model: authorization.profile
+  pk: 1
+  fields:
+    user: 1
+    client_admin_access: true
+    history_main_result_title: UTM-разметка
+    forms:
+    - 1

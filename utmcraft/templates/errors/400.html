@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load cache %}
+
+{# Кэшируется на 24 часа #}
+{% cache 86400 error400 %}
+    {% block main %}
+        <div class="row align-items-center centered">
+            <div class="mx-auto">
+                <div class="text-secondary">
+                    400 Bad Request 🧐
+                </div>
+            </div>
+        </div>
+    {% endblock %}
+
+    {% block footer %}
+    {% endblock %}
+{% endcache %}

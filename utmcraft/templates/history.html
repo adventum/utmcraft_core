@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    {{ block.super }} | История
+{% endblock %}
+
+{% block scripts %}
+    <link href="{% static 'css/history.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block main %}
+    {% include 'includes/nav.html' %}
+    {% include 'includes/history/utm_history.html' %}
+{% endblock %}

@@ -1,0 +1,13 @@
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle active advm-green-color"
+       id="nav-form-selector" role="button" data-toggle="dropdown"
+       aria-haspopup="true" aria-expanded="false">
+        UTM-прометчики
+    </a>
+    <div class="dropdown-menu" aria-labelledby="nav-form-selector">
+        {% for item in forms %}
+            <a class="dropdown-item form-selector-choice {% if item.pk == initial_form.pk %} disabled {% endif %}>"
+               formId={{ item.pk }}>{{ item.title }}</a>
+        {% endfor %}
+    </div>
+</li>

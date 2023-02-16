@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    {{ block.super }} | Настройки
+{% endblock %}
+
+{% block scripts %}
+    <link rel="stylesheet" type="text/css"
+          href="{% static 'third_party/select2-4.1.0/select2.min.css' %}">
+    <script type="application/javascript"
+            src="{% static 'third_party/select2-4.1.0/select2.min.js' %}"></script>
+    <script type="application/javascript"
+            src="{% static 'third_party/select2-4.1.0/ru.js' %}"></script>
+    <link rel="stylesheet" type="text/css"
+          href="{% static 'third_party/select2-4.1.0/select2-bootstrap4.min.css' %}">
+{% endblock %}
+
+{% block main %}
+    {% include 'includes/nav.html' %}
+    <div class="row mt-1">
+        <div class="col-2">
+            {% include 'includes/client_admin/sidebar.html' %}
+        </div>
+        <div class="col-10">
+            <div class="mx-3">
+                {% block content %}
+                {% endblock %}
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block scripts_onload %}
+    <script type="application/javascript" src="{% static 'js/utils.js' %}"></script>
+    <script type="application/javascript"
+            src="{% static 'js/components.js' %}"></script>
+    <script type="application/javascript" src="{% static 'js/api.js' %}"></script>
+    <script type="application/javascript"
+            src="{% static 'js/client_admin.js' %}"></script>
+{% endblock %}

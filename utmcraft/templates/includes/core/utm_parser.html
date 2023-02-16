@@ -1,0 +1,70 @@
+{% load cache %}
+
+<li class="nav-item">
+    <a class="nav-link white-color" id="nav-parser"
+       href="" data-toggle="modal"
+       data-target="#parser-modal">Парсер</a>
+</li>
+
+{# Кэшируется на 24 часа #}
+{% cache 86400 utm_parser %}
+    <div class="modal fade" id="parser-modal" data-backdrop="static"
+         data-keyboard="false" tabindex="-1" aria-labelledby="parser-modal-label"
+         aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"
+                        id="parser-modal-label">Парсер</h5>
+                    <button type="button" class="close" data-dismiss="modal"
+                            aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-secondary">Заполнение полей UTM-прометчика
+                        по уникальному коду промеченной ссылки.</p>
+                    <hr>
+                    <div class="alert alert-danger" role="alert" id="parser-form-alert"
+                         hidden></div>
+                    <form id="parser-form">
+                        <div class="form-group">
+                            <label for="utm-parser-code-input">Уникальный код<span
+                                    class="asteriskField">*</span></label>
+                            <input type="text" class="form-control" required
+                                   id="utm-parser-code-input" data-toggle="tooltip"
+                                   data-placement="left"
+                                   title="Укажите в этом поле 8-значный уникальный код, который, обычно, идет после символа '~'.">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="submit"
+                            class="btn btn-primary settings-form-submit-button"
+                            form="parser-form"
+                            value="Submit"
+                            style="width: 100px">Спарсить
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endcache %}
+
+{% if parser %}
+    <script>
+        (() => {
+            $('#parser-modal').modal('show')
+            const navParserButton = document.getElementById('nav-parser')
+            if (!!navParserButton) {
+                navParserButton.classList.remove('white-color')
+                navParserButton.classList.add('advm-green-color')
+            }
+            const utmFormSelector = document.getElementById('nav-form-selector')
+            if (!!utmFormSelector) {
+                utmFormSelector.classList.remove('advm-green-color')
+                utmFormSelector.classList.add('white-color')
+            }
+        })()
+    </script>
+{% endif %}

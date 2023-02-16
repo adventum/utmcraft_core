@@ -1,0 +1,14 @@
+- model: core.radiobuttonformfield
+  pk: 17
+  fields:
+    clean_value: false
+    disable_lowercase: false
+    chars_settings: transliterate
+    add_hash: false
+    hash_separator: '~'
+    choices: '{"\u0416\u0435\u043d\u0441\u043a\u0438\u0439": "w", "\u041c\u0443\u0436\u0441\u043a\u043e\u0439":
+      "m"}'
+    is_required: false
+    blank_value: true
+    initial: ''
+    custom_input: false

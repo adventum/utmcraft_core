@@ -1,0 +1,28 @@
+{% extends 'includes/client_admin/modals/base_modal.html' %}
+
+{% block title %}
+    Настройки поля "{{ item.label }}"
+{% endblock %}
+
+{% block form %}
+    <form class="checkbox-patch-form"
+          id="patch-{{ item.pk }}-form"
+          enctype="multipart/form-data"
+          entityId="{{ item.pk }}">
+        {% csrf_token %}
+        <div class="form-group mb-3">
+            <label for="patch-{{ item.pk }}-form-label">Ярлык</label>
+            <input type="text" name="label" class="form-control"
+                   id="patch-{{ item.pk }}-form-label"
+                   value="{{ item.label }}">
+        </div>
+        <div class="custom-control custom-switch">
+            <input type="checkbox" class="custom-control-input" name="initial"
+                   id="patch-{{ item.pk }}-form-initial"
+                   {% if item.initial %}checked{% endif %}>
+            <label class="custom-control-label" for="patch-{{ item.pk }}-form-initial">
+                Включить при загрузке формы прометчика
+            </label>
+        </div>
+    </form>
+{% endblock %}

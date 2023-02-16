@@ -1,0 +1,49 @@
+<nav class="navbar navbar-expand-lg navbar-light advm-dark-grey-bg">
+    <a class="navbar-brand advm-green-color"
+       href="{% url 'core:main_page' %}">UtmCraft</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbar-menu"
+            aria-controls="navbar-menu" aria-expanded="false"
+            aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbar-menu">
+        <ul class="navbar-nav mr-auto">
+            {% block navbar_links %}
+                {% if user.is_authenticated %}
+                    {# Парсер #}
+                    {% if page == 'main' %}
+                        {% include 'includes/core/utm_parser.html' %}
+                    {% else %}
+                        <li class="nav-item">
+                            <a class="nav-link white-color" id="nav-utm-parser"
+                               href="{% url 'core:main_page' %}?parser=true">Парсер</a>
+                        </li>
+                    {% endif %}
+                    {# История #}
+                    <li class="nav-item">
+                        <a class="nav-link {% if page == 'history' %}advm-green-color{% else %}white-color{% endif %}"
+                           id="nav-history" href="{% url 'history:utm' %}">История</a>
+                    </li>
+                    {# Клиентская админка #}
+                    {% if page == 'client_admin' or user.profile.client_admin_access and user.clientadmin.is_filled %}
+                        <li class="nav-item">
+                            <a class="nav-link {% if page == 'client_admin' %}advm-green-color{% else %}white-color{% endif %}"
+                               id="nav-client-admin"
+                               href="{% url 'client_admin:main' %}">Настройки</a>
+                        </li>
+                    {% endif %}
+                {% endif %}
+            {% endblock %}
+        </ul>
+        {% if user.is_authenticated %}
+            <span class="navbar-text light-grey-color">
+                Залогинен как <b>{{ user.get_username }}</b> | <a
+                    class="advm-green-color"
+                    href="{% url 'auth:logout' %}">Выход</a>
+            </span>
+        {% else %}
+            {% include 'includes/authentication/nav_auth.html' %}
+        {% endif %}
+    </div>
+</nav>

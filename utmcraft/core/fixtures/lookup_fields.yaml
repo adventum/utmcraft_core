@@ -1,0 +1,363 @@
+- model: core.lookuptablefield
+  pk: 33
+  fields:
+    default_value:
+    - $lt-full_ad_name-utmcraft
+    depends_field: 2
+    lookup_values:
+      mt:
+      - $lt-full_ad_name-utmcraft
+      vk:
+      - $lt-full_ad_name-utmcraft
+      tiktok:
+      - $lt-full_ad_name-utmcraft
+      vk_dinret:
+      - $it-adgroup_name-utmcraft
+      yandex_mix:
+      - $lt-full_ad_name-utmcraft
+      yandex_media:
+      - $lt-full_ad_name-utmcraft
+      yandex_master:
+      - $lt-full_ad_name-utmcraft
+      yandex_search:
+      - $lt-full_ad_name-utmcraft
+      yandex_network:
+      - $lt-full_ad_name-utmcraft
+- model: core.lookuptablefield
+  pk: 24
+  fields:
+    default_value:
+    - $co-utm_content-utmcraft
+    depends_field: 6
+    lookup_values:
+      mt:
+      - aid
+      - '{{banner_id}}'
+      - ad_format
+      - $it-adgroup_name-utmcraft
+      vk:
+      - $co-utm_content-utmcraft
+      tiktok:
+      - aid
+      - __CID__
+      - ad_name
+      - __CID_NAME__
+      vk_dinret:
+      - $co-utm_content-utmcraft
+      yandex_mix:
+      - $co-ya_full_content-utmcraft
+      yandex_media:
+      - $co-ya_full_content-utmcraft
+      yandex_master:
+      - $co-ya_full_content-utmcraft
+      yandex_search:
+      - $co-ya_full_content-utmcraft
+      yandex_network:
+      - $co-ya_full_content-utmcraft
+- model: core.lookuptablefield
+  pk: 23
+  fields:
+    default_value:
+    - $se-target_se-utmcraft
+    depends_field: 6
+    lookup_values:
+      mt:
+      - '{{search_phrase}}'
+      - audience
+      - $se-target_se-utmcraft
+      vk:
+      - '{search_phrase}'
+      - audience
+      - $se-target_se-utmcraft
+      tiktok:
+      - audience
+      - $se-target_se-utmcraft
+      vk_dinret:
+      - '{search_phrase}'
+      - audience
+      - $se-target_se-utmcraft
+      yandex_mix: []
+      yandex_media: []
+      yandex_master: []
+      yandex_search: []
+      yandex_network: []
+- model: core.lookuptablefield
+  pk: 49
+  fields:
+    default_value:
+    - $lt-campaign_name_depends_on_group-utmcraft
+    depends_field: 6
+    lookup_values:
+      yandex_master:
+      - $co-ya_full_campaign_name-utmcraft
+      yandex_search:
+      - $co-ya_full_campaign_name-utmcraft
+      yandex_network:
+      - $co-ya_full_campaign_name-utmcraft
+- model: core.lookuptablefield
+  pk: 53
+  fields:
+    default_value: []
+    depends_field: 6
+    lookup_values:
+      yandex_master:
+      - '&utm_term={keyword}'
+      yandex_search:
+      - '&utm_term={keyword}'
+      yandex_network:
+      - '&utm_term={keyword}'
+- model: core.lookuptablefield
+  pk: 47
+  fields:
+    default_value:
+    - $it-campaign_name-utmcraft
+    depends_field: 2
+    lookup_values:
+      '':
+      - $co-campaign_name_rek-utmcraft
+- model: core.lookuptablefield
+  pk: 58
+  fields:
+    default_value: []
+    depends_field: 6
+    lookup_values:
+      mt:
+      - $lt-campaing_name_with_din_rem-utmcraft
+      vk:
+      - $lt-campaing_name_with_din_rem-utmcraft
+      tiktok:
+      - $lt-campaing_name_with_din_rem-utmcraft
+      vk_dinret:
+      - $lt-campaing_name_with_din_rem-utmcraft
+      yandex_mix:
+      - $lt-campaign_name_depends_on_group-utmcraft
+      yandex_media:
+      - $lt-campaign_name_depends_on_group-utmcraft
+      yandex_master:
+      - $lt-campaign_name_depends_on_group-utmcraft
+      yandex_search:
+      - $lt-campaign_name_depends_on_group-utmcraft
+      yandex_network:
+      - $lt-campaign_name_depends_on_group-utmcraft
+- model: core.lookuptablefield
+  pk: 31
+  fields:
+    default_value:
+    - $lt-full_campaign_name-utmcraft
+    depends_field: 6
+    lookup_values:
+      mt:
+      - $lt-full_campaign_name-utmcraft
+      vk:
+      - $lt-full_campaign_name-utmcraft
+      tiktok:
+      - $lt-full_campaign_name-utmcraft
+      yandex:
+      - $lt-full_campaign_name-utmcraft
+      vk_dinret:
+      - $co-din_rem_campaing-utmcraft
+      yandex_mix:
+      - $lt-full_campaign_name-utmcraft
+      yandex_media:
+      - $lt-full_campaign_name-utmcraft
+- model: core.lookuptablefield
+  pk: 32
+  fields:
+    default_value:
+    - $co-base_ad_group_name-utmcraft
+    depends_field: 6
+    lookup_values:
+      mt:
+      - $co-base_ad_group_name-utmcraft
+      vk:
+      - $co-base_ad_group_name-utmcraft
+      tiktok:
+      - $co-din_rem_campaing-utmcraft
+      vk_dinret:
+      - $co-base_ad_group_name-utmcraft
+      yandex_mix:
+      - $co-base_ya_adgroup_name-utmcraft
+      yandex_media:
+      - $co-base_ya_adgroup_name-utmcraft
+      yandex_master:
+      - $co-base_ya_adgroup_name-utmcraft
+      yandex_search:
+      - $co-base_ya_adgroup_name-utmcraft
+      yandex_network:
+      - $co-base_ya_adgroup_name-utmcraft
+- model: core.lookuptablefield
+  pk: 28
+  fields:
+    default_value:
+    - $co-utm_campaign-utmcraft
+    depends_field: 6
+    lookup_values:
+      mt:
+      - $co-utm_campaign-utmcraft
+      vk:
+      - $co-utm_campaign-utmcraft
+      tiktok:
+      - $it-campaign_name-utmcraft
+      vk_dinret:
+      - $co-utm_campaign-utmcraft
+      yandex_mix:
+      - $lt-base_utm_campaign-utmcraft
+      yandex_media:
+      - $lt-base_utm_campaign-utmcraft
+      yandex_master:
+      - $lt-base_utm_campaign-utmcraft
+      yandex_search:
+      - $lt-base_utm_campaign-utmcraft
+      yandex_network:
+      - $lt-base_utm_campaign-utmcraft
+- model: core.lookuptablefield
+  pk: 25
+  fields:
+    default_value:
+    - $co-content_with_group-utmcraft
+    depends_field: 2
+    lookup_values:
+      '':
+      - $lt-base_content_name-utmcraft
+- model: core.lookuptablefield
+  pk: 55
+  fields:
+    default_value:
+    - $lt-base_term-utmcraft
+    depends_field: 6
+    lookup_values:
+      mt:
+      - '&utm_term='
+      - $lt-full_term-utmcraft
+      vk:
+      - '&utm_term='
+      - $lt-full_term-utmcraft
+      tiktok:
+      - '&utm_term='
+      - $lt-full_term-utmcraft
+      yandex:
+      - '&utm_term='
+      - $lt-full_term-utmcraft
+      vk_dinret:
+      - '&utm_term='
+      - $lt-full_term-utmcraft
+- model: core.lookuptablefield
+  pk: 26
+  fields:
+    default_value:
+    - $lt-base_term-utmcraft
+    depends_field: 6
+    lookup_values:
+      mt:
+      - $lt-base_term-utmcraft
+      vk:
+      - $lt-base_term-utmcraft
+      tiktok:
+      - $lt-base_term-utmcraft
+      yandex:
+      - $lt-base_term-utmcraft
+      vk_dinret:
+      - '{product_id}'
+      - '{dyn_audience_type}'
+- model: core.lookuptablefield
+  pk: 27
+  fields:
+    default_value:
+    - $co-utm_campaign-utmcraft
+    depends_field: 6
+    lookup_values:
+      mt:
+      - '{{campaign_name}}'
+      vk:
+      - '{campaign_name}'
+      tiktok:
+      - __CAMPAIGN_NAME__
+      - __AID_NAME__
+      vk_dinret:
+      - '{campaign_name}'
+- model: core.lookuptablefield
+  pk: 59
+  fields:
+    default_value: []
+    depends_field: 6
+    lookup_values:
+      mt:
+      - $lt-full_utm_campaign_name-utmcraft
+      vk:
+      - $lt-full_utm_campaign_name-utmcraft
+      tiktok:
+      - $lt-full_utm_campaign_name-utmcraft
+      vk_dinret:
+      - $lt-full_utm_campaign_name-utmcraft
+      yandex_mix:
+      - $lt-output_adgroup_name-utmcraft
+      yandex_media:
+      - $lt-output_adgroup_name-utmcraft
+      yandex_master:
+      - $lt-output_adgroup_name-utmcraft
+      yandex_search:
+      - $lt-output_adgroup_name-utmcraft
+      yandex_network:
+      - $lt-output_adgroup_name-utmcraft
+- model: core.lookuptablefield
+  pk: 57
+  fields:
+    default_value:
+    - $co-base_ya_adgroup_name-utmcraft
+    depends_field: 2
+    lookup_values:
+      '': []
+- model: core.lookuptablefield
+  pk: 45
+  fields:
+    default_value: []
+    depends_field: 6
+    lookup_values:
+      yandex_master:
+      - master
+      yandex_search:
+      - search
+      yandex_network:
+      - network
+- model: core.lookuptablefield
+  pk: 51
+  fields:
+    default_value:
+    - $se-source-utmcraft
+    depends_field: 6
+    lookup_values:
+      yandex_mix:
+      - yandex
+      yandex_media:
+      - yandex
+      yandex_master:
+      - yandex
+      yandex_search:
+      - yandex
+      yandex_network:
+      - yandex
+- model: core.lookuptablefield
+  pk: 52
+  fields:
+    default_value:
+    - $lt-campaign_name_depends_on_group-utmcraft
+    depends_field: 6
+    lookup_values:
+      mt:
+      - $lt-full_utm_campaign_name-utmcraft
+      vk:
+      - $lt-full_utm_campaign_name-utmcraft
+      tiktok:
+      - $lt-full_utm_campaign_name-utmcraft
+      vk_dinret:
+      - $lt-full_utm_campaign_name-utmcraft
+      yandex_mix:
+      - $lt-campaign_name_depends_on_group-utmcraft
+      yandex_media:
+      - $lt-campaign_name_depends_on_group-utmcraft
+      yandex_master:
+      - $lt-campaign_name_depends_on_group-utmcraft
+      yandex_search:
+      - $lt-campaign_name_depends_on_group-utmcraft
+      yandex_network:
+      - $lt-campaign_name_depends_on_group-utmcraft

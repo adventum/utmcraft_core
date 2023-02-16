@@ -1,0 +1,636 @@
+- model: core.field
+  pk: 1
+  fields:
+    created_at: 2022-10-14 13:56:01.115213+00:00
+    updated_at: 2022-10-28 08:38:44.758831+00:00
+    created_by: 1
+    updated_by: 1
+    title: campaign_name
+    full_title: it-campaign_name-utmcraft
+    user: 1
+    comment: ''
+    label: Дополнительная информация о кампании
+- model: core.field
+  pk: 2
+  fields:
+    created_at: 2022-10-14 14:07:24.843443+00:00
+    updated_at: 2022-10-28 08:36:07.709291+00:00
+    created_by: 1
+    updated_by: 1
+    title: adgroup_name
+    full_title: it-adgroup_name-utmcraft
+    user: 1
+    comment: ''
+    label: Дополнительная информация о группе объявлений
+- model: core.field
+  pk: 3
+  fields:
+    created_at: 2022-10-14 14:43:20.609871+00:00
+    updated_at: 2022-10-14 14:43:20.609889+00:00
+    created_by: 1
+    updated_by: 1
+    title: fast_url
+    full_title: it-fast_url-utmcraft
+    user: 1
+    comment: ''
+    label: Идентификатор доп. ссылки
+- model: core.field
+  pk: 6
+  fields:
+    created_at: 2022-10-14 15:31:48.706087+00:00
+    updated_at: 2022-11-02 15:07:57.329970+00:00
+    created_by: 1
+    updated_by: 1
+    title: source
+    full_title: se-source-utmcraft
+    user: 1
+    comment: ''
+    label: Источник
+- model: core.field
+  pk: 7
+  fields:
+    created_at: 2022-10-17 14:25:29.340358+00:00
+    updated_at: 2022-10-27 08:51:45.881827+00:00
+    created_by: 1
+    updated_by: 1
+    title: medium
+    full_title: se-medium-utmcraft
+    user: 1
+    comment: ''
+    label: Канал
+- model: core.field
+  pk: 8
+  fields:
+    created_at: 2022-10-19 08:19:26.791605+00:00
+    updated_at: 2022-10-28 08:31:17.386818+00:00
+    created_by: 1
+    updated_by: 1
+    title: ads_tipformat
+    full_title: se-ads_tipformat-utmcraft
+    user: 1
+    comment: ''
+    label: Формат рекламы
+- model: core.field
+  pk: 10
+  fields:
+    created_at: 2022-10-19 08:25:49.345603+00:00
+    updated_at: 2023-02-16 12:47:35.745256+00:00
+    created_by: 1
+    updated_by: 1
+    title: product
+    full_title: se-product-utmcraft
+    user: 1
+    comment: ''
+    label: Продукт
+- model: core.field
+  pk: 11
+  fields:
+    created_at: 2022-10-19 08:27:09.561952+00:00
+    updated_at: 2022-10-26 09:14:35.051932+00:00
+    created_by: 1
+    updated_by: 1
+    title: geo
+    full_title: se-geo-utmcraft
+    user: 1
+    comment: ''
+    label: Гео
+- model: core.field
+  pk: 12
+  fields:
+    created_at: 2022-10-19 08:28:49.694410+00:00
+    updated_at: 2022-10-28 08:34:06.960803+00:00
+    created_by: 1
+    updated_by: 1
+    title: audience
+    full_title: se-audience-utmcraft
+    user: 1
+    comment: ''
+    label: Аудитория
+- model: core.field
+  pk: 14
+  fields:
+    created_at: 2022-10-19 12:14:47.172877+00:00
+    updated_at: 2022-10-19 12:14:47.172897+00:00
+    created_by: 1
+    updated_by: 1
+    title: brand
+    full_title: ch-brand-utmcraft
+    user: 1
+    comment: ''
+    label: Бренд
+- model: core.field
+  pk: 15
+  fields:
+    created_at: 2022-10-19 12:17:01.576259+00:00
+    updated_at: 2022-10-19 12:17:01.576291+00:00
+    created_by: 1
+    updated_by: 1
+    title: age_to
+    full_title: ii-age_to-utmcraft
+    user: 1
+    comment: ''
+    label: Возраст до
+- model: core.field
+  pk: 16
+  fields:
+    created_at: 2022-10-19 12:17:57.771084+00:00
+    updated_at: 2022-10-19 12:17:57.771106+00:00
+    created_by: 1
+    updated_by: 1
+    title: age_from
+    full_title: ii-age_from-utmcraft
+    user: 1
+    comment: ''
+    label: Возраст от
+- model: core.field
+  pk: 17
+  fields:
+    created_at: 2022-10-20 08:15:35.475135+00:00
+    updated_at: 2022-10-20 08:17:33.910110+00:00
+    created_by: 1
+    updated_by: 1
+    title: sex
+    full_title: rb-sex-utmcraft
+    user: 1
+    comment: ''
+    label: Пол
+- model: core.field
+  pk: 18
+  fields:
+    created_at: 2022-10-20 11:50:30.201561+00:00
+    updated_at: 2022-10-20 11:50:30.201597+00:00
+    created_by: 1
+    updated_by: 1
+    title: base_url
+    full_title: it-base_url-utmcraft
+    user: 1
+    comment: ''
+    label: Ссылка на рекламируемую страницу
+- model: core.field
+  pk: 20
+  fields:
+    created_at: 2022-10-21 09:00:34.841406+00:00
+    updated_at: 2022-10-21 09:00:34.841432+00:00
+    created_by: 1
+    updated_by: 1
+    title: utm_content
+    full_title: co-utm_content-utmcraft
+    user: 1
+    comment: ''
+    label: utm_content
+- model: core.field
+  pk: 21
+  fields:
+    created_at: 2022-10-21 09:13:28.200190+00:00
+    updated_at: 2022-10-21 09:13:28.200215+00:00
+    created_by: 1
+    updated_by: 1
+    title: base_ad_group_name
+    full_title: co-base_ad_group_name-utmcraft
+    user: 1
+    comment: ''
+    label: Полное название группы объявлений
+- model: core.field
+  pk: 22
+  fields:
+    created_at: 2022-10-21 09:17:29.782577+00:00
+    updated_at: 2022-10-21 09:17:29.782600+00:00
+    created_by: 1
+    updated_by: 1
+    title: utm_campaign
+    full_title: co-utm_campaign-utmcraft
+    user: 1
+    comment: ''
+    label: Полное название кампании
+- model: core.field
+  pk: 23
+  fields:
+    created_at: 2022-10-21 09:38:02.517135+00:00
+    updated_at: 2022-11-15 09:04:53.721365+00:00
+    created_by: 1
+    updated_by: 1
+    title: base_term
+    full_title: lt-base_term-utmcraft
+    user: 1
+    comment: ''
+    label: utm_term
+- model: core.field
+  pk: 24
+  fields:
+    created_at: 2022-10-21 09:48:07.496088+00:00
+    updated_at: 2022-11-07 08:06:45.350374+00:00
+    created_by: 1
+    updated_by: 1
+    title: base_content_name
+    full_title: lt-base_content_name-utmcraft
+    user: 1
+    comment: ''
+    label: utm_content
+- model: core.field
+  pk: 25
+  fields:
+    created_at: 2022-10-21 09:53:10.719042+00:00
+    updated_at: 2022-11-21 23:28:46.766583+00:00
+    created_by: 1
+    updated_by: 1
+    title: full_content
+    full_title: lt-full_content-utmcraft
+    user: 1
+    comment: ''
+    label: Полное название группы
+- model: core.field
+  pk: 26
+  fields:
+    created_at: 2022-10-23 19:19:33.770744+00:00
+    updated_at: 2022-11-21 08:38:18.358157+00:00
+    created_by: 1
+    updated_by: 1
+    title: full_term
+    full_title: lt-full_term-utmcraft
+    user: 1
+    comment: ''
+    label: utm_term
+- model: core.field
+  pk: 27
+  fields:
+    created_at: 2022-10-23 19:25:47.962406+00:00
+    updated_at: 2022-11-22 22:18:39.142355+00:00
+    created_by: 1
+    updated_by: 1
+    title: full_utm_campaign_name
+    full_title: lt-full_utm_campaign_name-utmcraft
+    user: 1
+    comment: ''
+    label: Полное название группы объявлений (кроме яндекса)
+- model: core.field
+  pk: 28
+  fields:
+    created_at: 2022-10-23 19:29:57.256042+00:00
+    updated_at: 2022-11-08 07:47:02.458691+00:00
+    created_by: 1
+    updated_by: 1
+    title: full_campaign_name
+    full_title: lt-full_campaign_name-utmcraft
+    user: 1
+    comment: ''
+    label: campaign_name
+- model: core.field
+  pk: 29
+  fields:
+    created_at: 2022-10-23 19:40:04.683440+00:00
+    updated_at: 2022-10-23 19:40:04.683461+00:00
+    created_by: 1
+    updated_by: 1
+    title: full_url
+    full_title: co-full_url-utmcraft
+    user: 1
+    comment: ''
+    label: Промеченный URL
+- model: core.field
+  pk: 30
+  fields:
+    created_at: 2022-10-23 19:46:11.860245+00:00
+    updated_at: 2022-10-23 19:46:11.860267+00:00
+    created_by: 1
+    updated_by: 1
+    title: din_rem_campaing
+    full_title: co-din_rem_campaing-utmcraft
+    user: 1
+    comment: ''
+    label: din_rem_campaing
+- model: core.field
+  pk: 31
+  fields:
+    created_at: 2022-10-23 19:47:46.749976+00:00
+    updated_at: 2022-11-22 22:18:35.589024+00:00
+    created_by: 1
+    updated_by: 1
+    title: campaing_name_with_din_rem
+    full_title: lt-campaing_name_with_din_rem-utmcraft
+    user: 1
+    comment: ''
+    label: Полное название кампании (кроме яндекса)
+- model: core.field
+  pk: 32
+  fields:
+    created_at: 2022-10-23 19:54:13.184940+00:00
+    updated_at: 2022-11-10 08:46:48.379290+00:00
+    created_by: 1
+    updated_by: 1
+    title: full_ad_name
+    full_title: lt-full_ad_name-utmcraft
+    user: 1
+    comment: ''
+    label: full_ad_name
+- model: core.field
+  pk: 33
+  fields:
+    created_at: 2022-10-23 20:00:51.694843+00:00
+    updated_at: 2022-11-10 08:48:55.375079+00:00
+    created_by: 1
+    updated_by: 1
+    title: ad_name_with_din_rem
+    full_title: lt-ad_name_with_din_rem-utmcraft
+    user: 1
+    comment: ''
+    label: Полное название группы объявлений
+- model: core.field
+  pk: 35
+  fields:
+    created_at: 2022-10-27 09:04:47.089673+00:00
+    updated_at: 2022-10-28 08:33:35.500863+00:00
+    created_by: 1
+    updated_by: 1
+    title: target_se
+    full_title: se-target_se-utmcraft
+    user: 1
+    comment: ''
+    label: Таргет
+- model: core.field
+  pk: 36
+  fields:
+    created_at: 2022-10-27 09:21:57.705270+00:00
+    updated_at: 2022-10-28 08:31:12.191071+00:00
+    created_by: 1
+    updated_by: 1
+    title: ads_format
+    full_title: se-ads_format-utmcraft
+    user: 1
+    comment: ''
+    label: Тип формата рекламы
+- model: core.field
+  pk: 37
+  fields:
+    created_at: 2022-10-28 11:27:54.746883+00:00
+    updated_at: 2022-11-15 09:09:59.505815+00:00
+    created_by: 1
+    updated_by: 1
+    title: full_url2
+    full_title: co-full_url2-utmcraft
+    user: 1
+    comment: ''
+    label: Промеченный URL
+- model: core.field
+  pk: 38
+  fields:
+    created_at: 2022-11-02 15:39:46.090835+00:00
+    updated_at: 2022-11-02 15:39:46.090866+00:00
+    created_by: 1
+    updated_by: 1
+    title: content_product
+    full_title: co-content_product-utmcraft
+    user: 1
+    comment: ''
+    label: Продукт в метке utm_content
+- model: core.field
+  pk: 39
+  fields:
+    created_at: 2022-11-02 15:47:20.154640+00:00
+    updated_at: 2022-11-02 15:47:20.154666+00:00
+    created_by: 1
+    updated_by: 1
+    title: content_audience
+    full_title: co-content_audience-utmcraft
+    user: 1
+    comment: ''
+    label: Аудитория в метке utm_content
+- model: core.field
+  pk: 40
+  fields:
+    created_at: 2022-11-02 15:50:43.198505+00:00
+    updated_at: 2022-11-02 15:50:43.198528+00:00
+    created_by: 1
+    updated_by: 1
+    title: content_ad_format
+    full_title: co-content_ad_format-utmcraft
+    user: 1
+    comment: ''
+    label: Формат рекламы в метке utm_content
+- model: core.field
+  pk: 41
+  fields:
+    created_at: 2022-11-02 15:58:28.529516+00:00
+    updated_at: 2022-11-02 15:58:28.529541+00:00
+    created_by: 1
+    updated_by: 1
+    title: content_gender
+    full_title: co-content_gender-utmcraft
+    user: 1
+    comment: ''
+    label: Пол в метке utm_content
+- model: core.field
+  pk: 42
+  fields:
+    created_at: 2022-11-02 16:09:23.026089+00:00
+    updated_at: 2022-11-02 16:09:23.026115+00:00
+    created_by: 1
+    updated_by: 1
+    title: content_fast_url
+    full_title: co-content_fast_url-utmcraft
+    user: 1
+    comment: ''
+    label: Идентификатор доп. ссылки в метке utm_content
+- model: core.field
+  pk: 43
+  fields:
+    created_at: 2022-11-02 16:11:10.736395+00:00
+    updated_at: 2022-11-02 16:11:10.736421+00:00
+    created_by: 1
+    updated_by: 1
+    title: content
+    full_title: co-content-utmcraft
+    user: 1
+    comment: ''
+    label: Дополнительная информация
+- model: core.field
+  pk: 44
+  fields:
+    created_at: 2022-11-02 16:13:54.369102+00:00
+    updated_at: 2022-11-02 16:13:54.369125+00:00
+    created_by: 1
+    updated_by: 1
+    title: ya_full_content
+    full_title: co-ya_full_content-utmcraft
+    user: 1
+    comment: ''
+    label: Полное доп. инфо для Яндекс
+- model: core.field
+  pk: 45
+  fields:
+    created_at: 2022-11-07 08:41:27.389425+00:00
+    updated_at: 2022-11-22 22:03:12.923287+00:00
+    created_by: 1
+    updated_by: 1
+    title: source_type
+    full_title: lt-source_type-utmcraft
+    user: 1
+    comment: ''
+    label: Тип источника
+- model: core.field
+  pk: 46
+  fields:
+    created_at: 2022-11-07 08:54:56.702173+00:00
+    updated_at: 2022-11-07 08:54:56.702200+00:00
+    created_by: 1
+    updated_by: 1
+    title: campaign_name_rek
+    full_title: co-campaign_name_rek-utmcraft
+    user: 1
+    comment: ''
+    label: Рекламная кампания
+- model: core.field
+  pk: 47
+  fields:
+    created_at: 2022-11-07 09:05:30.956443+00:00
+    updated_at: 2022-11-22 22:16:06.886200+00:00
+    created_by: 1
+    updated_by: 1
+    title: campaign_name_depends_on_group
+    full_title: lt-campaign_name_depends_on_group-utmcraft
+    user: 1
+    comment: ''
+    label: Полное название кампании (только яндекс)
+- model: core.field
+  pk: 48
+  fields:
+    created_at: 2022-11-08 07:28:48.957413+00:00
+    updated_at: 2022-11-08 07:28:48.957435+00:00
+    created_by: 1
+    updated_by: 1
+    title: ya_full_campaign_name
+    full_title: co-ya_full_campaign_name-utmcraft
+    user: 1
+    comment: ''
+    label: Полное название кампании для Яндекса
+- model: core.field
+  pk: 49
+  fields:
+    created_at: 2022-11-08 07:42:30.827346+00:00
+    updated_at: 2022-11-08 07:42:30.827371+00:00
+    created_by: 1
+    updated_by: 1
+    title: base_utm_campaign
+    full_title: lt-base_utm_campaign-utmcraft
+    user: 1
+    comment: ''
+    label: Полное название кампании
+- model: core.field
+  pk: 50
+  fields:
+    created_at: 2022-11-10 08:41:26.077326+00:00
+    updated_at: 2022-11-10 08:41:26.077346+00:00
+    created_by: 1
+    updated_by: 1
+    title: base_ya_adgroup_name
+    full_title: co-base_ya_adgroup_name-utmcraft
+    user: 1
+    comment: ''
+    label: Название группы объявлений
+- model: core.field
+  pk: 51
+  fields:
+    created_at: 2022-11-10 09:35:20.866803+00:00
+    updated_at: 2022-11-10 09:35:20.866827+00:00
+    created_by: 1
+    updated_by: 1
+    title: source_value
+    full_title: lt-source_value-utmcraft
+    user: 1
+    comment: ''
+    label: Значение источника для utm_source
+- model: core.field
+  pk: 52
+  fields:
+    created_at: 2022-11-15 08:34:05.155210+00:00
+    updated_at: 2022-11-15 08:34:05.155230+00:00
+    created_by: 1
+    updated_by: 1
+    title: utm_campaign_for_source
+    full_title: lt-utm_campaign_for_source-utmcraft
+    user: 1
+    comment: ''
+    label: Генерация кампаний для разных источников
+- model: core.field
+  pk: 53
+  fields:
+    created_at: 2022-11-15 08:53:49.051915+00:00
+    updated_at: 2022-11-15 08:53:49.051935+00:00
+    created_by: 1
+    updated_by: 1
+    title: base_ya_term
+    full_title: lt-base_ya_term-utmcraft
+    user: 1
+    comment: ''
+    label: Ключевое слово яндекса
+- model: core.field
+  pk: 54
+  fields:
+    created_at: 2022-11-16 11:18:57.536447+00:00
+    updated_at: 2022-11-21 23:29:04.053276+00:00
+    created_by: 1
+    updated_by: 1
+    title: full_url3
+    full_title: co-full_url3-utmcraft
+    user: 1
+    comment: ''
+    label: Промеченный URL
+- model: core.field
+  pk: 55
+  fields:
+    created_at: 2022-11-21 08:40:28.314369+00:00
+    updated_at: 2022-11-21 08:40:28.314391+00:00
+    created_by: 1
+    updated_by: 1
+    title: full_term_look
+    full_title: lt-full_term_look-utmcraft
+    user: 1
+    comment: ''
+    label: utm_termfix
+- model: core.field
+  pk: 56
+  fields:
+    created_at: 2022-11-21 23:19:35.594576+00:00
+    updated_at: 2022-11-22 21:59:21.498940+00:00
+    created_by: 1
+    updated_by: 1
+    title: content_with_group
+    full_title: co-content_with_group-utmcraft
+    user: 1
+    comment: ''
+    label: Название контента вместе с группой
+- model: core.field
+  pk: 57
+  fields:
+    created_at: 2022-11-22 10:05:46.233899+00:00
+    updated_at: 2022-11-22 22:16:09.449659+00:00
+    created_by: 1
+    updated_by: 1
+    title: output_adgroup_name
+    full_title: lt-output_adgroup_name-utmcraft
+    user: 1
+    comment: ''
+    label: Полное название группы объявлений (только яндекс)
+- model: core.field
+  pk: 58
+  fields:
+    created_at: 2022-11-22 22:27:11.810332+00:00
+    updated_at: 2022-11-22 22:27:11.810353+00:00
+    created_by: 1
+    updated_by: 1
+    title: campaing_name_final
+    full_title: lt-campaing_name_final-utmcraft
+    user: 1
+    comment: ''
+    label: Полное название кампании
+- model: core.field
+  pk: 59
+  fields:
+    created_at: 2022-11-22 22:30:44.895571+00:00
+    updated_at: 2022-11-22 22:30:44.895592+00:00
+    created_by: 1
+    updated_by: 1
+    title: group_name_final
+    full_title: lt-group_name_final-utmcraft
+    user: 1
+    comment: ''
+    label: Полное название группы объявлений

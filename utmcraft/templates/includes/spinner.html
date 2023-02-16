@@ -1,0 +1,14 @@
+{% load cache %}
+
+{# Кэшируется на 24 часа #}
+{% cache 86400 spinner %}
+    <div class="d-flex justify-content-center flex-column" id="spinner-lock">
+        <div class="spinner-border advm-green-color align-self-center"
+             style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+        <div class="align-self-center advm-green-color">
+            {{ spinner_text }}
+        </div>
+    </div>
+{% endcache %}

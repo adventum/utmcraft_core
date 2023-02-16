@@ -1,0 +1,48 @@
+{% if page_obj.has_other_pages %}
+    <nav aria-label="Pagination">
+        <ul class="pagination justify-content-center">
+            {% if page_obj.has_previous %}
+                <li class="page-item">
+                    <a class="page-link"
+                       href="?page=1{% if request.GET.f %}&f={{ request.GET.f }}{% endif %}{% if request.GET.v %}&v={{ request.GET.v }}{% endif %}">
+                        В начало
+                    </a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link"
+                       href="?page={{ page_obj.previous_page_number }}{% if request.GET.f %}&f={{ request.GET.f }}{% endif %}{% if request.GET.v %}&v={{ request.GET.v }}{% endif %}"
+                       aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+            {% endif %}
+            {% for p in page_obj.paginator.page_range %}
+                {% if page_obj.number == p %}
+                    <li class="page-item active" aria-current="page">
+                        <span class="page-link">{{ p }}</span>
+                    </li>
+                {% elif p > page_obj.number|add:-3 and p < page_obj.number|add:3 %}
+                    <li class="page-item">
+                        <a class="page-link"
+                           href="?page={{ p }}{% if request.GET.f %}&f={{ request.GET.f }}{% endif %}{% if request.GET.v %}&v={{ request.GET.v }}{% endif %}">{{ p }}</a>
+                    </li>
+                {% endif %}
+            {% endfor %}
+            {% if page_obj.has_next %}
+                <li class="page-item">
+                    <a class="page-link"
+                       href="?page={{ page_obj.next_page_number }}{% if request.GET.f %}&f={{ request.GET.f }}{% endif %}{% if request.GET.v %}&v={{ request.GET.v }}{% endif %}"
+                       aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link"
+                       href="?page={{ page_obj.paginator.num_pages }}{% if request.GET.f %}&f={{ request.GET.f }}{% endif %}{% if request.GET.v %}&v={{ request.GET.v }}{% endif %}">
+                        В конец
+                    </a>
+                </li>
+            {% endif %}
+        </ul>
+    </nav>
+{% endif %}

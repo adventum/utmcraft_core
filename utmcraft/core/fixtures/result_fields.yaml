@@ -1,0 +1,370 @@
+- model: core.resultfield
+  pk: 21
+  fields:
+    clean_value: false
+    disable_lowercase: false
+    chars_settings: transliterate
+    add_hash: false
+    hash_separator: '~'
+    separator: _
+    remove_blank_values: true
+- model: core.resultfield
+  pk: 50
+  fields:
+    clean_value: true
+    disable_lowercase: false
+    chars_settings: transliterate
+    add_hash: true
+    hash_separator: '~'
+    separator: _
+    remove_blank_values: true
+- model: core.resultfield
+  pk: 46
+  fields:
+    clean_value: true
+    disable_lowercase: false
+    chars_settings: transliterate
+    add_hash: true
+    hash_separator: '~'
+    separator: _
+    remove_blank_values: true
+- model: core.resultfield
+  pk: 40
+  fields:
+    clean_value: true
+    disable_lowercase: false
+    chars_settings: transliterate
+    add_hash: false
+    hash_separator: '~'
+    separator: '|'
+    remove_blank_values: true
+- model: core.resultfield
+  pk: 39
+  fields:
+    clean_value: true
+    disable_lowercase: false
+    chars_settings: transliterate
+    add_hash: false
+    hash_separator: '~'
+    separator: '|'
+    remove_blank_values: true
+- model: core.resultfield
+  pk: 42
+  fields:
+    clean_value: true
+    disable_lowercase: false
+    chars_settings: transliterate
+    add_hash: false
+    hash_separator: '~'
+    separator: '|'
+    remove_blank_values: true
+- model: core.resultfield
+  pk: 41
+  fields:
+    clean_value: true
+    disable_lowercase: false
+    chars_settings: transliterate
+    add_hash: false
+    hash_separator: '~'
+    separator: '|'
+    remove_blank_values: true
+- model: core.resultfield
+  pk: 38
+  fields:
+    clean_value: true
+    disable_lowercase: false
+    chars_settings: transliterate
+    add_hash: false
+    hash_separator: '~'
+    separator: '|'
+    remove_blank_values: true
+- model: core.resultfield
+  pk: 43
+  fields:
+    clean_value: true
+    disable_lowercase: false
+    chars_settings: transliterate
+    add_hash: false
+    hash_separator: '~'
+    separator: '|'
+    remove_blank_values: true
+- model: core.resultfield
+  pk: 56
+  fields:
+    clean_value: true
+    disable_lowercase: false
+    chars_settings: transliterate
+    add_hash: false
+    hash_separator: '~'
+    separator: '|'
+    remove_blank_values: true
+- model: core.resultfield
+  pk: 30
+  fields:
+    clean_value: false
+    disable_lowercase: false
+    chars_settings: transliterate
+    add_hash: true
+    hash_separator: '~'
+    separator: _
+    remove_blank_values: true
+- model: core.resultfield
+  pk: 37
+  fields:
+    clean_value: false
+    disable_lowercase: true
+    chars_settings: transliterate
+    add_hash: false
+    hash_separator: '~'
+    separator: ''
+    remove_blank_values: true
+- model: core.resultfield
+  pk: 54
+  fields:
+    clean_value: false
+    disable_lowercase: true
+    chars_settings: transliterate
+    add_hash: false
+    hash_separator: '~'
+    separator: ''
+    remove_blank_values: true
+- model: core.resultfield
+  pk: 29
+  fields:
+    clean_value: false
+    disable_lowercase: true
+    chars_settings: transliterate
+    add_hash: false
+    hash_separator: '~'
+    separator: ''
+    remove_blank_values: true
+- model: core.resultfield
+  pk: 22
+  fields:
+    clean_value: false
+    disable_lowercase: false
+    chars_settings: transliterate
+    add_hash: true
+    hash_separator: '~'
+    separator: _
+    remove_blank_values: true
+- model: core.resultfield
+  pk: 20
+  fields:
+    clean_value: true
+    disable_lowercase: false
+    chars_settings: transliterate
+    add_hash: false
+    hash_separator: '~'
+    separator: '|'
+    remove_blank_values: true
+- model: core.resultfield
+  pk: 48
+  fields:
+    clean_value: true
+    disable_lowercase: false
+    chars_settings: transliterate
+    add_hash: false
+    hash_separator: '~'
+    separator: '|'
+    remove_blank_values: true
+- model: core.resultfield
+  pk: 44
+  fields:
+    clean_value: true
+    disable_lowercase: false
+    chars_settings: transliterate
+    add_hash: false
+    hash_separator: '~'
+    separator: '|'
+    remove_blank_values: true
+- model: core.resultfield
+  pk: 33
+  fields:
+    clean_value: false
+    disable_lowercase: false
+    chars_settings: transliterate
+    add_hash: false
+    hash_separator: '~'
+    separator: _
+    remove_blank_values: true
+- model: core.resultfield
+  pk: 24
+  fields:
+    clean_value: false
+    disable_lowercase: true
+    chars_settings: transliterate
+    add_hash: false
+    hash_separator: '~'
+    separator: '|'
+    remove_blank_values: true
+- model: core.resultfield
+  pk: 23
+  fields:
+    clean_value: false
+    disable_lowercase: true
+    chars_settings: transliterate
+    add_hash: false
+    hash_separator: '~'
+    separator: '|'
+    remove_blank_values: true
+- model: core.resultfield
+  pk: 49
+  fields:
+    clean_value: true
+    disable_lowercase: false
+    chars_settings: transliterate
+    add_hash: false
+    hash_separator: '~'
+    separator: ''
+    remove_blank_values: true
+- model: core.resultfield
+  pk: 53
+  fields:
+    clean_value: false
+    disable_lowercase: false
+    chars_settings: transliterate
+    add_hash: false
+    hash_separator: '~'
+    separator: ''
+    remove_blank_values: true
+- model: core.resultfield
+  pk: 47
+  fields:
+    clean_value: true
+    disable_lowercase: false
+    chars_settings: transliterate
+    add_hash: false
+    hash_separator: '~'
+    separator: ''
+    remove_blank_values: true
+- model: core.resultfield
+  pk: 58
+  fields:
+    clean_value: false
+    disable_lowercase: false
+    chars_settings: transliterate
+    add_hash: false
+    hash_separator: '~'
+    separator: ''
+    remove_blank_values: true
+- model: core.resultfield
+  pk: 31
+  fields:
+    clean_value: true
+    disable_lowercase: false
+    chars_settings: transliterate
+    add_hash: false
+    hash_separator: '~'
+    separator: _
+    remove_blank_values: true
+- model: core.resultfield
+  pk: 32
+  fields:
+    clean_value: false
+    disable_lowercase: false
+    chars_settings: transliterate
+    add_hash: false
+    hash_separator: '~'
+    separator: _
+    remove_blank_values: true
+- model: core.resultfield
+  pk: 28
+  fields:
+    clean_value: false
+    disable_lowercase: false
+    chars_settings: transliterate
+    add_hash: false
+    hash_separator: '~'
+    separator: ''
+    remove_blank_values: true
+- model: core.resultfield
+  pk: 25
+  fields:
+    clean_value: true
+    disable_lowercase: false
+    chars_settings: transliterate
+    add_hash: false
+    hash_separator: '~'
+    separator: '|'
+    remove_blank_values: true
+- model: core.resultfield
+  pk: 55
+  fields:
+    clean_value: false
+    disable_lowercase: false
+    chars_settings: transliterate
+    add_hash: false
+    hash_separator: '~'
+    separator: ''
+    remove_blank_values: true
+- model: core.resultfield
+  pk: 26
+  fields:
+    clean_value: false
+    disable_lowercase: true
+    chars_settings: transliterate
+    add_hash: false
+    hash_separator: '~'
+    separator: '|'
+    remove_blank_values: true
+- model: core.resultfield
+  pk: 27
+  fields:
+    clean_value: false
+    disable_lowercase: true
+    chars_settings: transliterate
+    add_hash: false
+    hash_separator: '~'
+    separator: '|'
+    remove_blank_values: true
+- model: core.resultfield
+  pk: 59
+  fields:
+    clean_value: false
+    disable_lowercase: false
+    chars_settings: transliterate
+    add_hash: false
+    hash_separator: '~'
+    separator: ''
+    remove_blank_values: true
+- model: core.resultfield
+  pk: 57
+  fields:
+    clean_value: true
+    disable_lowercase: false
+    chars_settings: transliterate
+    add_hash: false
+    hash_separator: '~'
+    separator: ''
+    remove_blank_values: true
+- model: core.resultfield
+  pk: 45
+  fields:
+    clean_value: true
+    disable_lowercase: false
+    chars_settings: transliterate
+    add_hash: false
+    hash_separator: '~'
+    separator: _
+    remove_blank_values: true
+- model: core.resultfield
+  pk: 51
+  fields:
+    clean_value: true
+    disable_lowercase: false
+    chars_settings: transliterate
+    add_hash: false
+    hash_separator: '~'
+    separator: ''
+    remove_blank_values: true
+- model: core.resultfield
+  pk: 52
+  fields:
+    clean_value: true
+    disable_lowercase: false
+    chars_settings: transliterate
+    add_hash: false
+    hash_separator: '~'
+    separator: ''
+    remove_blank_values: true

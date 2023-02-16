@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block scripts %}
+    <link rel="stylesheet" type="text/css"
+          href="{% static 'third_party/select2-4.1.0/select2.min.css' %}">
+    <script type="application/javascript"
+            src="{% static 'third_party/select2-4.1.0/select2.min.js' %}"></script>
+    <script type="application/javascript"
+            src="{% static 'third_party/select2-4.1.0/ru.js' %}"></script>
+    <link rel="stylesheet" type="text/css"
+          href="{% static 'third_party/select2-4.1.0/select2-bootstrap4.min.css' %}">
+    <script type="application/javascript"
+            src="{% static 'third_party/clipboard-2.0.10/clipboard.min.js' %}"></script>
+{% endblock %}
+
+{% block main %}
+    {% include 'includes/spinner.html' %}
+    {% include 'includes/nav.html' %}
+    <div class="container mt-3" id="main-container" hidden>
+        <div class="row">
+            <div class="col-md-12" id="form-area">
+                {% block form %}
+                    {% if form_available %}
+                        {{ form_html }}
+                    {% else %}
+                        <div class="row align-items-center centered">
+                            <div class="mx-auto text-secondary">
+                                <b>Доступных UTM-прометчиков пока что нет 😔</b>
+                                <br>Если вы уверены, что они должны быть, напишите нам
+                                на <a href="mailto:analytics@adventum.ru">почту</a>.
+                            </div>
+                        </div>
+                    {% endif %}
+                {% endblock %}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12" id="result-area" hidden></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block scripts_onload %}
+    <script type="application/javascript" src="{% static 'js/utils.js' %}"></script>
+    <script type="application/javascript"
+            src="{% static 'js/components.js' %}"></script>
+    <script type="application/javascript" src="{% static 'js/api.js' %}"></script>
+    <script type="application/javascript" src="{% static 'js/main.js' %}"></script>
+{% endblock %}

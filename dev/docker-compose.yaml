@@ -1,0 +1,25 @@
+# Install dev .env:
+# – Postgres
+# – Redis
+
+version: '3'
+
+services:
+  postgres:
+    image: postgres:latest
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: postgres
+    volumes:
+      - ./postgres:/docker-entrypoint-initdb.d
+    restart: unless-stopped
+
+  redis:
+    image: redis
+    command: redis-server --requirepass lAsZ8R2iqx
+    ports:
+      - "6379:6379"
+    restart: unless-stopped

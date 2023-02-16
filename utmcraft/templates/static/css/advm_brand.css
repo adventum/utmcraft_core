@@ -1,0 +1,82 @@
+@import url("fonts/GothamPro/stylesheet.css");
+
+body {
+    font-family: GothamPro, sans-serif !important;
+}
+
+:root {
+    --advm-green: #9cff00;
+    --advm-dark-grey: #353838;
+    --advm-blue: #1e31d0;
+    --advm-white: #fff;
+    --advm-light-grey: #d3d3d3;
+}
+
+.advm-dark-grey-bg {
+    background-color: var(--advm-dark-grey) !important;
+}
+
+.advm-dark-grey-color {
+    color: var(--advm-dark-grey) !important;
+}
+
+.advm-green-color {
+    color: var(--advm-green) !important;
+}
+
+.white-color {
+    color: var(--advm-white) !important;
+}
+
+.light-grey-color {
+    color: var(--advm-light-grey) !important;
+}
+
+.page-item.active .page-link {
+    background-color: var(--advm-green) !important;;
+    border-color: var(--advm-green) !important;
+}
+
+/*Выбор опции в Select2-полях*/
+.select2-container--bootstrap4 .select2-results__option--highlighted,
+.select2-container--bootstrap4 .select2-results__option--highlighted.select2-results__option[aria-selected="true"] {
+    background-color: var(--advm-dark-grey) !important;
+}
+
+/*Активированные чекбоксы и радио-кнопки*/
+.custom-control-input:checked ~ .custom-control-label::before {
+    background-color: var(--advm-green) !important;
+    border-color: var(--advm-green) !important;
+}
+
+/*Кнопки отправки форм*/
+.btn-primary {
+    background-color: var(--advm-dark-grey) !important;
+    border-color: var(--advm-dark-grey) !important;
+}
+
+/*Выпадающие списки*/
+.dropdown-item.active, .dropdown-item:active {
+    background-color: var(--advm-dark-grey);
+}
+
+/*Пагинация*/
+.page-link, .page-link:hover {
+    color: var(--advm-dark-grey);
+}
+
+/*Табы*/
+.nav-link {
+    color: var(--advm-dark-grey);
+}
+
+.nav-link:hover {
+    color: var(--advm-dark-grey);
+}
+
+/*Вертикальные меню*/
+.nav-pills .nav-link.active {
+    background-color: var(--advm-light-grey) !important;
+    border-color: var(--advm-dark-grey) !important;
+    color: var(--advm-dark-grey) !important;
+}

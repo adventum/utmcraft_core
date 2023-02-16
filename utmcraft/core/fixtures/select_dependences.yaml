@@ -1,0 +1,175 @@
+- model: core.selectformfielddependence
+  pk: 1
+  fields:
+    created_at: 2022-10-20 11:49:26.320786+00:00
+    updated_at: 2022-10-28 08:30:06.657306+00:00
+    created_by: 1
+    updated_by: 1
+    title: source_ads_format
+    full_title: source_ads_format-utmcraft
+    user: 1
+    comment: ''
+    parent_field: 36
+    child_field: 8
+    values:
+      mt_multi:
+      - Преролл
+      - Квадратное видео
+      - Горизонтальное видео
+      - Баннер 240х400
+      - Rewarded
+      - Баннер HTML5
+      - Shoppable Ads
+      - Тизер
+      - Карусель
+      - Полноэкранное видео
+      - Супервидео
+      - Баннер Видео
+      - Bumper Ads
+      - Аудиоролик
+      - Мультиформат
+      - Товарные баннеры
+      - Динамическая карусель
+      - Динамический баннер
+      - Микс форматов
+      vk_multi:
+      - Тизер Сообщество
+      - Реклама личной страницы
+      - Stories
+      - Тизер Приложение
+      - Универсальная запись
+      - Запись с кнопкой
+      - Карусель
+      - Тизер Внешний сайт
+      - Реклама сайта
+      - Клипы
+      - Мобильное приложение
+      - Маркет-платформа
+      - Микс форматов
+      tiktok_multi:
+      - In-feed
+      yandex_multi:
+      - All-roll
+      - Pre-roll
+      - SMS
+      - Bumper Ads
+      - True View
+      - TrueView in-Stream
+      - TrueView for Action
+      - TrueView for Reach
+      - TrueView for Shopping
+      - TrueView Video Discovery
+      - Non-skip in-Stream
+      - in-Stream
+      - out-Stream
+      - Native Roll
+      - Баннер
+      - Билборды
+      - Видео
+      - Канвас
+      - Карусель
+      - Лидформа
+      - МКБ
+      - Мультиформат
+      - Нативный формат
+      - Пины
+      - Пост
+      - Промопост в ленте
+      - Рассылка
+      - Смарт-баннеры
+      - Статья
+      - ТГБ
+      - Текст
+      - Товары
+      - Эксклюзив
+      - Video Action (без макросов)
+      - Stories
+      - Микс форматов
+      vk_dinret_multi:
+      - Тизер Сообщество
+      - Реклама личной страницы
+      - Stories
+      - Тизер Приложение
+      - Универсальная запись
+      - Запись с кнопкой
+      - Карусель
+      - Тизер Внешний сайт
+      - Реклама сайта
+      - Клипы
+      - Мобильное приложение
+      - Маркет-платформа
+      - Микс форматов
+      yandex_mix_multi:
+      - All-roll
+      - Pre-roll
+      - SMS
+      - Bumper Ads
+      - True View
+      - TrueView in-Stream
+      - TrueView for Action
+      - TrueView for Reach
+      - TrueView for Shopping
+      - TrueView Video Discovery
+      - Non-skip in-Stream
+      - in-Stream
+      - out-Stream
+      - Native Roll
+      - Баннер
+      - Билборды
+      - Видео
+      - Канвас
+      - Карусель
+      - Лидформа
+      - МКБ
+      - Мультиформат
+      - Нативный формат
+      - Пины
+      - Пост
+      - Промопост в ленте
+      - Рассылка
+      - Смарт-баннеры
+      - Статья
+      - ТГБ
+      - Текст
+      - Товары
+      - Эксклюзив
+      - Video Action (без макросов)
+      - Stories
+      - Микс форматов
+      yandex_media_multi:
+      - All-roll
+      - Pre-roll
+      - SMS
+      - Bumper Ads
+      - True View
+      - TrueView in-Stream
+      - TrueView for Action
+      - TrueView for Reach
+      - TrueView for Shopping
+      - TrueView Video Discovery
+      - Non-skip in-Stream
+      - in-Stream
+      - out-Stream
+      - Native Roll
+      - Баннер
+      - Билборды
+      - Видео
+      - Канвас
+      - Карусель
+      - Лидформа
+      - МКБ
+      - Мультиформат
+      - Нативный формат
+      - Пины
+      - Пост
+      - Промопост в ленте
+      - Рассылка
+      - Смарт-баннеры
+      - Статья
+      - ТГБ
+      - Текст
+      - Товары
+      - Эксклюзив
+      - Video Action (без макросов)
+      - Stories
+      - Микс форматов

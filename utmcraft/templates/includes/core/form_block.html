@@ -1,0 +1,8 @@
+{% load crispy_forms_tags %}
+
+{{ select_dependencies|json_script:"select-dependencies-data" }}
+<div id="form-block">
+    {% if form %}
+        {% crispy form %}
+    {% endif %}
+</div>

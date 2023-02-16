@@ -1,0 +1,4 @@
+- model: core.checkboxformfield
+  pk: 14
+  fields:
+    initial: false

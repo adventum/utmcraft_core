@@ -1,0 +1,11 @@
+{% extends 'client_admin.html' %}
+{% load static %}
+
+{% block title %}
+    {{ block.super }} | Поля checkbox
+{% endblock %}
+
+{% block content %}
+    {% url 'client_admin:ui-checkbox' as url %}
+    {% include 'includes/client_admin/field_content.html' with field_type='checkbox' %}
+{% endblock %}

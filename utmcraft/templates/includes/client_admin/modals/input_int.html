@@ -1,0 +1,60 @@
+{% extends 'includes/client_admin/modals/base_modal.html' %}
+
+{% block title %}
+    Настройки поля "{{ item.label }}"
+{% endblock %}
+
+{% block form %}
+    <form class="input-int-patch-form"
+          id="patch-{{ item.pk }}-form"
+          enctype="multipart/form-data"
+          entityId="{{ item.pk }}">
+        {% csrf_token %}
+        <div class="form-group mb-3">
+            <label for="patch-{{ item.pk }}-form-label">Ярлык</label>
+            <input type="text" name="label" class="form-control"
+                   id="patch-{{ item.pk }}-form-label"
+                   value="{{ item.label }}">
+        </div>
+        <div class="custom-control custom-switch mb-3">
+            <input type="checkbox" class="custom-control-input" name="is_required"
+                   id="patch-{{ item.pk }}-form-is-required"
+                   {% if item.is_required %}checked{% endif %}>
+            <label class="custom-control-label"
+                   for="patch-{{ item.pk }}-form-is-required">
+                Обязательно к заполнению в форме прометчика
+            </label>
+        </div>
+        <div class="form-group mb-3">
+            <label for="patch-{{ item.pk }}-form-initial">Значение по умолчанию</label>
+            <input type="number" name="initial" class="form-control"
+                   id="patch-{{ item.pk }}-form-initial"
+                   value="{{ item.initial }}">
+            <small id="patch-{{ item.pk }}-form-initial-help"
+                   class="form-text text-muted">
+                Значение поля, которое будет установлено после загрузки формы
+                прометчика.
+            </small>
+        </div>
+        <div class="form-group mb-3">
+            <label for="patch-{{ item.pk }}-form-placeholder">Плейсхолдер</label>
+            <input type="number" name="placeholder" class="form-control"
+                   id="patch-{{ item.pk }}-form-placeholder"
+                   value="{{ item.placeholder }}">
+            <small id="patch-{{ item.pk }}-form-placeholder-help"
+                   class="form-text text-muted">
+                Подсказка в пустом поле.
+            </small>
+        </div>
+        <div class="form-group">
+            <label for="patch-{{ item.pk }}-form-tooltip">Тултип</label>
+            <textarea class="form-control"
+                      id="patch-{{ item.pk }}-form-tooltip"
+                      rows="3" name="tooltip">{{ item.tooltip }}</textarea>
+            <small id="patch-{{ item.pk }}-form-tooltip-help"
+                   class="form-text text-muted">
+                Всплывающая подсказка при наведении курсора на поле.
+            </small>
+        </div>
+    </form>
+{% endblock %}

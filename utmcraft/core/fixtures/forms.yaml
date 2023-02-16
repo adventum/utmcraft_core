@@ -1,0 +1,37 @@
+- model: core.form
+  pk: 1
+  fields:
+    created_at: 2022-10-23 20:15:58.310360+00:00
+    updated_at: 2022-11-22 22:31:31.015351+00:00
+    created_by: 1
+    updated_by: 1
+    title: adventum
+    full_title: adventum-utmcraft
+    user: 1
+    comment: ''
+    ui:
+    - - $it-base_url-utmcraft
+    - - $se-product-utmcraft
+      - $se-source-utmcraft
+      - $se-medium-utmcraft
+    - - $ch-brand-utmcraft
+      - ''
+      - ''
+    - - $se-target_se-utmcraft
+      - $se-ads_format-utmcraft
+      - $se-ads_tipformat-utmcraft
+    - - $se-geo-utmcraft
+      - $se-audience-utmcraft
+    - - $it-campaign_name-utmcraft
+      - $it-adgroup_name-utmcraft
+    - - $ii-age_from-utmcraft
+      - $ii-age_to-utmcraft
+      - $rb-sex-utmcraft
+    - - $it-fast_url-utmcraft
+    main_result_field: 54
+    main_result_is_url: true
+    result_fields:
+    - 58
+    - 59
+    select_dependencies:
+    - 1

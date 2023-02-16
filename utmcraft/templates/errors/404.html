@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load cache %}
+
+{# Кэшируется на 24 часа #}
+{% cache 86400 error404 %}
+    {% block main %}
+        {% include 'includes/nav.html' %}
+        <div class="row align-items-center centered">
+            <div class="mx-auto">
+                <div class="text-secondary">
+                    Ошибка 404: страница не существует 🧐
+                </div>
+                <a href="{% url 'core:main_page' %}">Вернуться на главную</a>
+            </div>
+        </div>
+    {% endblock %}
+{% endcache %}

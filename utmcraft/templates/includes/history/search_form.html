@@ -1,0 +1,35 @@
+<form class="mt-1 mx-3" action="{{ url }}" method="get">
+    <div class="form-row align-items-center">
+        <div class="col-sm-3">
+            <label class="sr-only" for="query-input">Поисковый запрос</label>
+            <input type="text" name="q" class="form-control mb-2" id="query-input"
+                   placeholder="Поиск по истории..."
+                   {% if query %}value="{{ query }}"{% endif %}>
+        </div>
+        <div class="col-auto">
+            <label class="sr-only" for="query-date-from">Дата и время от</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">Дата и время от</div>
+                </div>
+                <input class="form-control" type="datetime-local" name="date_from"
+                       id="query-date-from"
+                       {% if date_from %}value="{{ date_from }}"{% endif %}>
+            </div>
+        </div>
+        <div class="col-auto">
+            <label class="sr-only" for="query-date-to">Дата и время до</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">Дата и время до</div>
+                </div>
+                <input class="form-control" type="datetime-local" name="date_to"
+                       id="query-date-to"
+                       {% if date_to %}value="{{ date_to }}" {% endif %}>
+            </div>
+        </div>
+        <div class="col-auto">
+            <button type="submit" class="btn btn-primary mb-2">Найти</button>
+        </div>
+    </div>
+</form>

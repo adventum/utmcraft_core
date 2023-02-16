@@ -1,0 +1,65 @@
+@import url("fonts/GothamPro/stylesheet.css");
+
+body {
+    font-family: GothamPro, sans-serif !important;
+}
+
+#header a:hover {
+    color: #9cff00;
+}
+
+:root {
+    --primary: #353838;
+    --secondary: #353838;
+    --accent: #9cff00;
+    --primary-fg: #fff;
+
+    --body-fg: #333;
+    --body-bg: #fff;
+    --body-quiet-color: #666;
+    --body-loud-color: #000;
+
+    --header-color: #9cff00;
+    --header-branding-color: var(--accent);
+    --header-bg: var(--secondary);
+    --header-link-color: var(--primary-fg);
+
+    --breadcrumbs-fg: #9cff00;
+    --breadcrumbs-link-fg: var(--body-bg);
+    --breadcrumbs-bg: var(--primary);
+
+    --link-fg: #1e31d0 !important;
+    --link-hover-color: #9cff00;
+    --link-selected-fg: #1e31d0;
+
+    --hairline-color: #e8e8e8;
+    --border-color: #ccc;
+
+    --error-fg: #ba2121;
+
+    --message-success-bg: #dfd;
+    --message-warning-bg: #ffc;
+    --message-error-bg: #ffefef;
+
+    --darkened-bg: #f8f8f8;
+    --selected-bg: #e4e4e4;
+    --selected-row: #D3D3D3;
+
+    --button-fg: #fff;
+    --button-bg: var(--primary);
+    --button-hover-bg: #006400;
+    --default-button-bg: #008000;
+    --default-button-hover-bg: #006400;
+    --close-button-bg: #888;
+    --close-button-hover-bg: #747474;
+    --delete-button-bg: #ba2121;
+    --delete-button-hover-bg: #a41515;
+
+    --object-tools-fg: var(--button-fg);
+    --object-tools-bg: var(--close-button-bg);
+    --object-tools-hover-bg: var(--close-button-hover-bg);
+}
+
+.av-fields-table td, .av-fields-table th {
+    border-bottom: none;
+}

@@ -1,0 +1,27 @@
+- model: client_admin.clientadmin
+  pk: 1
+  fields:
+    user: 1
+    input_text_fields:
+    - 18
+    - 3
+    - 2
+    - 1
+    input_int_fields:
+    - 16
+    - 15
+    checkbox_fields:
+    - 14
+    radiobutton_fields:
+    - 17
+    select_fields:
+    - 36
+    - 35
+    - 12
+    - 11
+    - 10
+    - 8
+    - 7
+    - 6
+    select_dependencies:
+    - 1

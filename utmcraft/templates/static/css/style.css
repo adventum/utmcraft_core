@@ -1,0 +1,54 @@
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: auto;
+}
+
+#login-form .asteriskField {
+    display: none;
+}
+
+#login-form {
+    width: 350px;
+}
+
+#login-form-submit-button {
+    width: 150px;
+}
+
+.centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#spinner-lock {
+    position: fixed;
+    visibility: hidden;
+    z-index: 100000;
+    background: #2a2a2a55;
+    width: 100%;
+    height: 100%;
+}
+
+.asteriskField {
+    color: red;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#submit-id-build {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

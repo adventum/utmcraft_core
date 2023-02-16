@@ -1,0 +1,21 @@
+<div>
+    <div class="mb-1">{{ element.label }}</div>
+    {% if element.is_bas64_image %}
+        <img src="data:image/png;base64,{{ element.value }}"
+             id="result-{{ element.title }}" alt="{{ element.title }}-img">
+    {% elif element.is_error %}
+        <div class="alert alert-danger mb-1" role="alert"
+             id="result-{{ element.title }}">
+            {{ element.value }}
+        </div>
+    {% else %}
+        <div class="alert alert-secondary mb-1" role="alert"
+             id="result-{{ element.title }}">
+            {{ element.value }}
+        </div>
+    {% endif %}
+    {% if not element.is_error and not element.is_bas64_image and element.value|length > 0 %}
+        {% include 'includes/copy_button.html' with target=element.title %}
+        <small class="text-muted">{{ element.value|length }} символов</small>
+    {% endif %}
+</div>

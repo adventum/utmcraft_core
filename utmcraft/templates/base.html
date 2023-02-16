@@ -1,0 +1,58 @@
+{% load static %}
+{% load cache %}
+
+<!doctype html>
+<html lang="ru" translate="no">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    {% include 'includes/favicon.html' %}
+    {% include 'includes/gtm_head.html' %}
+    <script type="application/javascript"
+            src="{% static 'third_party/jquery-3.6.0/jquery-3.6.0.min.js' %}"></script>
+    <link rel="stylesheet" type="text/css"
+          href="{% static 'third_party/bootstrap-4.6.1/css/bootstrap.min.css' %}">
+    <script type="application/javascript"
+            src="{% static 'third_party/bootstrap-4.6.1/js/bootstrap.bundle.min.js' %}"></script>
+    <script type="application/javascript"
+            src="{% static 'third_party/js-cookie-3.0.1/js.cookie.min.js' %}"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/advm_brand.css' %}">
+
+    {% block scripts %}
+    {% endblock %}
+
+    <title>
+        {% block title %}
+            UtmCraft
+        {% endblock %}
+    </title>
+</head>
+<body>
+{% include 'includes/gtm_body.html' %}
+
+{% block main %}
+{% endblock %}
+
+{% block footer %}
+    <footer class="bg-light advm-dark-grey-bg">
+        <div class="row align-items-center mx-0">
+            <div class="col-4"></div>
+            <div class="col-4 text-center text-secondary py-3 white-color">
+                © {% now 'Y' %} Copyright:
+                <a href="https://adventum.ru" class="advm-green-color"
+                   target="_blank">adventum.ru</a>
+            </div>
+            <div class="col-4 text-right">
+                <small class="text-secondary pe-3">v{{ APP_VERSION_NUMBER }}</small>
+            </div>
+        </div>
+    </footer>
+{% endblock %}
+</body>
+
+{% block scripts_onload %}
+{% endblock %}
+
+</html>

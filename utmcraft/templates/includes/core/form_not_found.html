@@ -1,0 +1,12 @@
+{% load cache %}
+
+{# Кэшируется на 24 часа #}
+{% cache 86400 form_not_found %}
+    <div id="form-block" class="row align-items-center" style="height: 80vh">
+        <div class="mx-auto">
+            <div class="text-secondary">
+                Форма UTM-прометчика не найдена 😔
+            </div>
+        </div>
+    </div>
+{% endcache %}

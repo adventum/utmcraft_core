@@ -1,0 +1,80 @@
+{% extends 'includes/client_admin/modals/base_modal.html' %}
+
+{% block title %}
+    Настройки поля "{{ item.label }}"
+{% endblock %}
+
+{% block form %}
+    <form class="radio-button-patch-form"
+          id="patch-{{ item.pk }}-form"
+          enctype="multipart/form-data"
+          entityId="{{ item.pk }}">
+        {% csrf_token %}
+        <div class="form-group mb-3">
+            <label for="patch-{{ item.pk }}-form-label">Ярлык</label>
+            <input type="text" name="label" class="form-control"
+                   id="patch-{{ item.pk }}-form-label"
+                   value="{{ item.label }}">
+        </div>
+        <div class="form-group mb-3">
+            <label for="patch-{{ item.pk }}-form-choices">Элементы поля</label>
+            <textarea class="form-control"
+                      id="patch-{{ item.pk }}-form-choices" rows="8"
+                      name="choices">{{ item.choices }}</textarea>
+            <small id="patch-{{ item.pk }}-form-choices-help"
+                   class="form-text text-muted">
+                Необходимо указать в виде валидного JSON-словаря: ключ (key) – это ярлык
+                (то, что будет выбирать пользователь), значение (value) – это значение
+                (то, что будет уходить в прометчик).
+            </small>
+            <script>document.getElementById("patch-{{ item.pk }}-form-choices").textContent = JSON.stringify({{ item.choices|safe }}, undefined, 2)</script>
+        </div>
+        <div class="form-group mb-3">
+            <label for="patch-{{ item.pk }}-form-initial">Значение по умолчанию</label>
+            <input type="text" name="initial" class="form-control"
+                   id="patch-{{ item.pk }}-form-initial"
+                   value="{{ item.initial }}">
+            <small id="patch-{{ item.pk }}-form-initial-help"
+                   class="form-text text-muted">
+                Значение (value) из JSON-словаря, элемент с которым будет выбран
+                автоматически после загрузки прометчика.
+            </small>
+        </div>
+        <div class="custom-control custom-switch mb-3">
+            <input type="checkbox" class="custom-control-input" name="is_required"
+                   id="patch-{{ item.pk }}-form-is-required"
+                   {% if item.is_required %}checked{% endif %}>
+            <label class="custom-control-label"
+                   for="patch-{{ item.pk }}-form-is-required">
+                Обязательно к заполнению в форме прометчика
+            </label>
+        </div>
+        <div class="custom-control custom-switch mb-3">
+            <input type="checkbox" class="custom-control-input" name="blank_value"
+                   id="patch-{{ item.pk }}-form-blank-value"
+                   {% if item.blank_value %}checked{% endif %}>
+            <label class="custom-control-label"
+                   for="patch-{{ item.pk }}-form-blank-value">
+                Добавить пустое значение
+            </label>
+            <small id="patch-{{ item.pk }}-form-blank-value-help"
+                   class="form-text text-muted">
+                К элементам поля будет добавлен элемент "Не задано" с пустым значением.
+            </small>
+        </div>
+        <div class="custom-control custom-switch">
+            <input type="checkbox" class="custom-control-input" name="custom_input"
+                   id="patch-{{ item.pk }}-form-custom-input"
+                   {% if item.custom_input %}checked{% endif %}>
+            <label class="custom-control-label"
+                   for="patch-{{ item.pk }}-form-custom-input">
+                Возможность задать значение вручную
+            </label>
+            <small id="patch-{{ item.pk }}-form-custom-input-help"
+                   class="form-text text-muted">
+                К элементам поля будет добавлен элемент "Указать вручную...", при выборе
+                которого появится поле для ввода значения вручную.
+            </small>
+        </div>
+    </form>
+{% endblock %}

@@ -1,0 +1,53 @@
+{% extends 'includes/client_admin/modals/base_modal.html' %}
+
+{% block title %}
+    Зависимость select-поля "{{ item.parent_field.label }} →
+    {{ item.child_field.label }}"
+{% endblock %}
+
+{% block form %}
+    {% if item.parent_field.full_title|slice:':3' == 'it-' %}
+        <div class="alert alert-secondary" role="alert">
+            💡 Тип родительского поля: input text
+        </div>
+    {% elif item.parent_field.full_title|slice:':3' == 'ii-' %}
+        <div class="alert alert-secondary" role="alert">
+            💡 Тип родительского поля: input int
+        </div>
+    {% elif item.parent_field.full_title|slice:':3' == 'ch-' %}
+        <div class="alert alert-secondary" role="alert">
+            💡 Тип родительского поля: checkbox
+        </div>
+    {% elif item.parent_field.full_title|slice:':3' == 'rb-' %}
+        <div class="alert alert-secondary" role="alert">
+            💡 Тип родительского поля: radio button
+        </div>
+    {% elif item.parent_field.full_title|slice:':3' == 'se-' %}
+        <div class="alert alert-secondary" role="alert">
+            💡 Тип родительского поля: select
+        </div>
+    {% endif %}
+    <form class="select-deps-patch-form"
+          id="patch-{{ item.pk }}-form"
+          enctype="multipart/form-data"
+          entityId="{{ item.pk }}">
+        {% csrf_token %}
+        <div class="form-group">
+            <label for="patch-{{ item.pk }}-form-values">Зависимые значения</label>
+            <textarea class="form-control"
+                      id="patch-{{ item.pk }}-form-values" rows="14"
+                      name="values">{{ item.values }}</textarea>
+            <small id="patch-{{ item.pk }}-form-values-help"
+                   class="form-text text-muted">
+                Необходимо указать в виде валидного JSON-словаря: ключ (key) – <b>значение</b>
+                родительского поля, значение (value) – массив <b>ярлыков</b> элементов
+                зависимого поля, которые будут показаны при выборе/установке указанного
+                значения родительского поля.
+                <br>💡Если родительское поле – чекбокс, то допустимые ключи только
+                <code>"on"</code>
+                и <code>"off"</code>.
+            </small>
+            <script>document.getElementById("patch-{{ item.pk }}-form-values").textContent = JSON.stringify({{ item.values|safe }}, undefined, 2)</script>
+        </div>
+    </form>
+{% endblock %}

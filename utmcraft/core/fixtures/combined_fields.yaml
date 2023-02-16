@@ -1,0 +1,154 @@
+- model: core.combinedfield
+  pk: 21
+  fields:
+    build_rule:
+    - $se-ads_tipformat-utmcraft
+    - $it-adgroup_name-utmcraft
+- model: core.combinedfield
+  pk: 50
+  fields:
+    build_rule:
+    - $it-adgroup_name-utmcraft
+    - $lt-source_type-utmcraft
+    - $se-target_se-utmcraft
+    - $se-geo-utmcraft
+    - $ii-age_from-utmcraft
+    - $ii-age_to-utmcraft
+- model: core.combinedfield
+  pk: 46
+  fields:
+    build_rule:
+    - $it-campaign_name-utmcraft
+    - $lt-source_type-utmcraft
+    - $se-target_se-utmcraft
+    - $se-geo-utmcraft
+    - $ii-age_from-utmcraft
+    - $ii-age_to-utmcraft
+- model: core.combinedfield
+  pk: 40
+  fields:
+    build_rule:
+    - ad_format
+    - $se-ads_format-utmcraft
+- model: core.combinedfield
+  pk: 39
+  fields:
+    build_rule:
+    - audience
+    - $se-audience-utmcraft
+- model: core.combinedfield
+  pk: 42
+  fields:
+    build_rule:
+    - fast_url
+    - $it-fast_url-utmcraft
+- model: core.combinedfield
+  pk: 41
+  fields:
+    build_rule:
+    - gender
+    - $rb-sex-utmcraft
+- model: core.combinedfield
+  pk: 38
+  fields:
+    build_rule:
+    - product
+    - $se-product-utmcraft
+- model: core.combinedfield
+  pk: 43
+  fields:
+    build_rule:
+    - $co-content_product-utmcraft
+    - $co-content_audience-utmcraft
+    - $co-content_ad_format-utmcraft
+    - $co-content_gender-utmcraft
+    - $co-content_fast_url-utmcraft
+    - $ch-brand-utmcraft
+- model: core.combinedfield
+  pk: 56
+  fields:
+    build_rule:
+    - $co-base_ya_adgroup_name-utmcraft
+    - $lt-base_content_name-utmcraft
+- model: core.combinedfield
+  pk: 30
+  fields:
+    build_rule:
+    - $it-campaign_name-utmcraft
+- model: core.combinedfield
+  pk: 37
+  fields:
+    build_rule:
+    - $it-base_url-utmcraft
+    - /
+    - ?utm_source=
+    - $lt-source_value-utmcraft
+    - '&utm_medium='
+    - $se-medium-utmcraft
+    - '&utm_campaign='
+    - lt-utm_campaign_for_source-utmcraft
+    - lt-base_ya_term-utmcraft
+    - '&utm_content='
+    - $lt-full_content-utmcraft
+    - '&utm_term='
+    - $lt-full_term-utmcraft
+- model: core.combinedfield
+  pk: 54
+  fields:
+    build_rule:
+    - $it-base_url-utmcraft
+    - /
+    - ?utm_source=
+    - $lt-source_value-utmcraft
+    - '&utm_medium='
+    - $se-medium-utmcraft
+    - '&utm_campaign='
+    - $lt-utm_campaign_for_source-utmcraft
+    - $lt-base_ya_term-utmcraft
+    - '&utm_content='
+    - $lt-full_content-utmcraft
+    - $lt-full_term_look-utmcraft
+- model: core.combinedfield
+  pk: 29
+  fields:
+    build_rule:
+    - $it-base_url-utmcraft
+    - /
+    - ?utm_source=
+    - $se-source-utmcraft
+    - '&utm_medium='
+    - $se-medium-utmcraft
+    - '&utm_campaign='
+    - $lt-full_utm_campaign_name-utmcraft
+    - '&utm_content='
+    - $lt-full_content-utmcraft
+    - '&utm_term='
+    - $lt-full_term-utmcraft
+- model: core.combinedfield
+  pk: 22
+  fields:
+    build_rule:
+    - $it-campaign_name-utmcraft
+    - $se-ads_tipformat-utmcraft
+    - $se-geo-utmcraft
+- model: core.combinedfield
+  pk: 20
+  fields:
+    build_rule:
+    - aid
+    - '{ad_id}'
+    - '{platform}'
+    - ad_name
+    - $it-adgroup_name-utmcraft
+- model: core.combinedfield
+  pk: 48
+  fields:
+    build_rule:
+    - $lt-campaign_name_depends_on_group-utmcraft
+    - '{campaing_id}'
+- model: core.combinedfield
+  pk: 44
+  fields:
+    build_rule:
+    - '{phrase_id}_{retargeting_id}|cid|{campaign_id}|gid|{gbid}|aid|{ad_id}|adp|{addphrases}|pos|{position_type}{position}|src|{source_type}_{source}|dvc|{device_type}|rgnid|{region_id}|rgn|{region_name}'
+    - $co-content-utmcraft

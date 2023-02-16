@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load cache %}
+
+{# Кэшируется на 24 часа #}
+{% cache 86400 error403 %}
+    {% block main %}
+        <div class="row align-items-center centered">
+            <div class="mx-auto">
+                <div class="text-secondary">
+                    Нет доступа на выполнение данной операции ⛔️
+                    <br><small>Если вы уверены, что это ошибка, напишите нам на
+                    <a href="mailto:analytics@adventum.ru">почту</a>.</small>
+                </div>
+            </div>
+        </div>
+    {% endblock %}
+
+    {% block footer %}
+    {% endblock %}
+{% endcache %}

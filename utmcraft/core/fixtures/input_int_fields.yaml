@@ -1,0 +1,14 @@
+- model: core.inputintformfield
+  pk: 16
+  fields:
+    is_required: false
+    tooltip: ''
+    initial: null
+    placeholder: 18
+- model: core.inputintformfield
+  pk: 15
+  fields:
+    is_required: false
+    tooltip: ''
+    initial: null
+    placeholder: 35

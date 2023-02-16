@@ -1,0 +1,26 @@
+<nav class="nav flex-column nav-pills">
+    {% if input_text_fields_exists == True %}
+        <a class="nav-link {% if input_text_active %}active{% endif %}"
+           href="{% url 'client_admin:ui-input-text' %}">Поля input text</a>
+    {% endif %}
+    {% if input_int_fields_exists == True %}
+        <a class="nav-link {% if input_int_active %}active{% endif %}"
+           href="{% url 'client_admin:ui-input-int' %}">Поля input int</a>
+    {% endif %}
+    {% if checkbox_fields_exists == True %}
+        <a class="nav-link {% if checkbox_active %}active{% endif %}"
+           href="{% url 'client_admin:ui-checkbox' %}">Поля checkbox</a>
+    {% endif %}
+    {% if radiobutton_fields_exists == True %}
+        <a class="nav-link {% if radiobutton_active %}active{% endif %}"
+           href="{% url 'client_admin:ui-radiobutton' %}">Поля radio button</a>
+    {% endif %}
+    {% if select_fields_exists == True %}
+        <a class="nav-link {% if select_active %}active{% endif %}"
+           href="{% url 'client_admin:ui-select' %}">Поля select</a>
+    {% endif %}
+    {% if selects_deps_exists == True %}
+        <a class="nav-link {% if select_deps_active %}active{% endif %}"
+           href="{% url 'client_admin:ui-select-deps' %}">Зависимости select-полей</a>
+    {% endif %}
+</nav>
